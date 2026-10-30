@@ -1,0 +1,22 @@
+{
+  "repoPath": "/absolute/path/to/local/clone",
+  "remote": "origin",
+  "branch": "main",
+  "promptFiles": ["PROMPT.md"],
+  "watchAuthors": ["collaborator@example.com"],
+  "bot": {
+    "name": "gitocode-bot",
+    "email": "gitocode-bot@users.noreply.github.com"
+  },
+  "pollIntervalSec": 60,
+  "debounceSec": 90,
+  "claude": {
+    "model": null,
+    "permissionMode": "acceptEdits",
+    "allowedTools": ["Read", "Edit", "Write", "Glob", "Grep", "Bash(npm test:*)", "Bash(npm run:*)"],
+    "disallowedTools": ["Bash(git commit:*)", "Bash(git push:*)", "Bash(git reset:*)", "Bash(rm:*)"],
+    "timeoutMin": 30,
+    "extraArgs": []
+  },
+  "stateFile": "./state.json"
+}

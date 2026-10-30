@@ -1,0 +1,18 @@
+{
+  "name": "gitocode",
+  "version": "0.1.0",
+  "description": "Watch a GitHub repo for collaborator prompt updates and feed them to Claude Code CLI",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "gitocode": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "once": "node src/index.js --once"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}
